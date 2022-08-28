@@ -1,0 +1,30 @@
+/*
+Products:
+let Coffee_beans = "Arabica"
+let Water = "Clean water"
+let Syrup = "Hazelnut"
+let Spice = "Cinnamon"
+let Milk = "Cow's milk"
+Tools:
+const SHREDDER = "Coffee grinder"
+const TURK = "turk for coffee"
+const STOVE = "Working kitchen stove"
+const CUP = "Coffee cup"
+const SPOON = "Loong spoon"
+const STRAINER = "Small strainer"
+*/
+
+const CupOfCoffee = "Coffee recipe"
+let Step1 = "1. Taking a SHREDDER to grind Coffee beans"
+let Step2 = "2. Add ground coffee to the TURK"
+let Step3 = "3. Add Syrup to the TURK"
+let Step4 = "4. Add Spice to the TURK"
+let Step5 = "5. Add Water to the TURK"
+let Step6 = "6. Put the TURK on the Stove"
+let Step7 = "7. Stir with a SPOON of coffee in a TURK"
+let Step8 = "8. When stuttering, remove the TURK from the Stove"
+let Step9 = "9. Pour the coffee from the TURK into a CUP through a STRAINER"
+let Step10 = "10. Add Milk to a CUP"
+let Step11 = "11. Enjoy"
+
+document.write (CupOfCoffee, "<br>", Step1, "<br>", Step2, "<br>", Step3, "<br>", Step4, "<br>", Step5 ,"<br>", Step6, "<br>", Step7, "<br>", Step8, "<br>", Step9, "<br>", Step10, "<br>", Step11,)
