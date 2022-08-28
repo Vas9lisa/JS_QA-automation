@@ -1,4 +1,11 @@
-/*
+let firstName = "John"
+let lastName = "Adams"
+document.write(firstName," ", lastName)
+firstName = "Anna"
+lastName = "Karenina"
+document.write("<br>", firstName," ", lastName)
+
+/* Это на будущее:
 Products:
 let Coffee_beans = "Arabica"
 let Water = "Clean water"
@@ -28,3 +35,8 @@ let Step10 = "10. Add Milk to a CUP"
 let Step11 = "11. Enjoy"
 
 document.write (CupOfCoffee, "<br>", Step1, "<br>", Step2, "<br>", Step3, "<br>", Step4, "<br>", Step5 ,"<br>", Step6, "<br>", Step7, "<br>", Step8, "<br>", Step9, "<br>", Step10, "<br>", Step11,)
+
+//Еще вот так сделала
+const CupOfCoffee = "Coffee recipe"
+let Step = "1. Taking a SHREDDER to grind Coffee beans" + "<br>" + "2. Add ground coffee to the TURK" + "<br>" + "3. Add Syrup to the TURK" + "<br>" + "4. Add Spice to the TURK" + "<br>" + "5. Add Water to the TURK" + "<br>" + "6. Put the TURK on the Stove" + "<br>" + "7. Stir with a SPOON of coffee in a TURK" + "<br>" + "8. When stuttering, remove the TURK from the Stove" + "<br>" + "9. Pour the coffee from the TURK into a CUP through a STRAINER" + "<br>" + "10. Add Milk to a CUP" + "<br>" + "11. Enjoy"
+document.write (CupOfCoffee, "<br>", Step)
