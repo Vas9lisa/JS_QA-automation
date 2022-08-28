@@ -5,7 +5,8 @@ firstName = "Anna"
 lastName = "Karenina"
 document.write("<br>", firstName," ", lastName)
 
-/* Это на будущее:
+/* 
+Это на будущее:
 Products:
 let Coffee_beans = "Arabica"
 let Water = "Clean water"
