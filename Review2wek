@@ -22,3 +22,6 @@ if (LegalAge<=Man){
   document.write("Пшёл вон, сопляк!")
 }
 
+3️⃣ блок
+Популярная шутейка:
+console.log("b" + "a" + "b"/"a" + "a") = baNaNa
