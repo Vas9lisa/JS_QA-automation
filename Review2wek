@@ -1,0 +1,22 @@
+|| (ИЛИ) Ищет True и дальше не идёт
+True || True -> True
+False || True -> True
+True || False -> True
+False || False -> False
+
+&& (И) Ищет False и дальше не идёт. Приоритет перед ||(ИЛИ)
+True && True -> True
+False && True -> False
+True && False -> False
+False && False -> False
+
+Пример
+const LegalAge = 18
+let Man = 23
+//let Man = prompt("Сколько зим видал?", 10)    promt выводи окно для ввода значения(лет) и после выводит ответ
+
+if (LegalAge<=Man){
+  document.write("Что желаешь выпить,странник?")
+} else{
+  document.write("Пшёл вон, сопляк!")
+}
