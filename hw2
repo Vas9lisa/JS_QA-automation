@@ -49,3 +49,73 @@ if(a>b) {
 else{
   document.write("a less b")
 }
+
+
+
+
+HW_2
+
+/* 1 Напишите следующую программу:
+- У клиента должен быть выбор из двух(или трех) видов кофе ( на ваш выбор).
+- Дайте названия вашим видам кофе.
+- Установите цену на кофе в зависимости от величины стаканчика( small, medium, big).
+- Выведите на экран название, затем рецепт выбранного кофе (используйте переменные для изменения рецепта и названия) и его стоимость (в зависимости от размера стаканчика). 
+- Компоненты кофе не влияют на стоимость.
+- Используйте подходящую комбинацию условий if, (else if), else для решения задачи.
+*/
+
+
+//Молоко
+let Milk_a = "Cow's milk"
+let Milk_b = "Almond milk"
+let Milk_c = "Coconut milk"
+//Сироп
+let Syrup_a = "Hazelnut"
+let Syrup_b = "Coconut"
+let Syrup_c = "Caramel"
+//Размер
+let Size_1 = 0.2*10
+let Size_2 = 0.4*10
+let Size_3 = 0.8*10
+
+
+
+let Milk = Milk_a
+let Syrup = Syrup_c
+let Size = Size_2
+
+
+
+if(Milk == Milk_a) {
+  document.write("Natural coffee")
+}
+else if(Milk == Milk_b) {
+document.write("Almond coffee")
+}
+else{
+document.write("Coconut coffee")
+}
+
+if(Syrup == Syrup_a) {
+  document.write(" + Hazelnut syrup" + "</br>" + "</br>")
+}
+else if(Syrup == Syrup_b) {
+document.write(" + Coconut syrup" + "</br>" + "</br>")
+}
+else{
+document.write(" + Caramel syrup" + "</br>" + "</br>")
+}
+
+let Coffee_recipe = `1. Add grains to the coffee machine and turn it on </br> 2. Pour the finished coffee into a glass </br> 3. Add the ${ Syrup } </br> 4. Add ${ Milk }`
+
+document.write(Coffee_recipe)
+
+if(Size == Size_1) {
+  document.write("</br>" + "</br>" + `The price of your order - ${ Size } $`)
+}
+else if(Size == Size_2) {
+document.write("</br>" + "</br>" + `The price of your order - ${ Size } $`)
+}
+else{
+document.write("</br>" + "</br>" + `The price of your order - ${ Size } $`)
+}
