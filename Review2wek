@@ -1,3 +1,4 @@
+1️⃣ блок
 || (ИЛИ) Ищет True и дальше не идёт
 True || True -> True
 False || True -> True
@@ -10,7 +11,7 @@ False && True -> False
 True && False -> False
 False && False -> False
 
-Пример
+2️⃣ блок
 const LegalAge = 18
 let Man = 23
 //let Man = prompt("Сколько зим видал?", 10)    promt выводи окно для ввода значения(лет) и после выводит ответ
@@ -20,3 +21,4 @@ if (LegalAge<=Man){
 } else{
   document.write("Пшёл вон, сопляк!")
 }
+
