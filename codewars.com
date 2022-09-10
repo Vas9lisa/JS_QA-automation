@@ -130,14 +130,12 @@ function numberToString(num) {
  
 8 kyu Opposite number
 function opposite(number) {
-  return -number
-}
+  return -number}
 
 
 8 kyu Convert a String to a Number!
 function opposite(number) {
-  return -number
-}
+  return -number}
 
 
 8 kyu Grasshopper - Grade book
@@ -164,12 +162,52 @@ function greet(name){
 return `Hello, ${name} how are you doing today?` }
 
 
+8 kyu simple calculator
+function calculator(a,b,sign){
+  if (a != a*1 && b != b*1)
+    return "unknown value"
+  else if (sign=="-")
+    return a-b
+  else if (sign=="*")
+    return a*b     
+  else if (sign=="/")
+    return a/b
+  else if (sign=="+")
+    return a+b
+  else
+    return "unknown value" }
+  
+  ИЛИ
+  
+  function calculator(a,b,sign){
+  if (a == "" || b == "")
+    return "unknown value"
+  else if (sign=="-")
+    return a-b
+  else if (sign=="*")
+    return a*b     
+  else if (sign=="/")
+    return a/b
+  else if (sign=="+")
+    return a+b
+  else
+    return "unknown value"}
+
+
 7 kyu lucky number
 function isLucky(n) {
 if(n%9==0 || n==0)
     return true 
   else 
     return false}
+
+
+8 kyu Is he gonna survive?
+function hero(bullets, dragons){
+if(bullets>=(dragons*2))
+   return true
+  else 
+   return false}
 
 
 7 kyu Is this a triangle?
