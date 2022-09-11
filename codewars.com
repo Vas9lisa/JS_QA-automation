@@ -192,14 +192,54 @@ function calculator(a,b,sign){
     return a+b
   else
     return "unknown value"}
+    
+    
+8 kyu Is n divisible by x and y?    
+function isDivisible(n, x, y) {
+if(n%x==0 && n%y==0)
+  return true
+else
+  return false}
 
 
-7 kyu lucky number
-function isLucky(n) {
-if(n%9==0 || n==0)
-    return true 
-  else 
-    return false}
+8 kyu L1: Set Alarm
+function setAlarm(employed, vacation){
+if(employed == true && vacation == false)
+  return true
+else
+  return false}
+
+
+8 kyu Determine offspring sex based on genes XX and XY chromosomes
+function chromosomeCheck(sperm) {
+  if(sperm == "XY")
+    return "Congratulations! You're going to have a son."
+  else
+    return "Congratulations! You're going to have a daughter."}
+
+
+8 kyu Grasshopper - If/else syntax debug
+function checkAlive (health) {
+  if (health<=0)
+    return false
+  else
+    return true}
+
+
+8 kyu Fix your code before the garden dies!
+function rainAmount(mm){
+    if (mm < 40) 
+         return `You need to give your plant ${40 - mm}mm of water`
+    else 
+         return "Your plant has had more than enough water for today!"}
+
+
+8 kyu Plural
+function plural(n) {
+if(n==1)
+  return false
+else
+  return true}
 
 
 8 kyu Is he gonna survive?
@@ -208,6 +248,28 @@ if(bullets>=(dragons*2))
    return true
   else 
    return false}
+   
+   
+7 kyu Debug Basic Calculator
+var calculate = function calculate(a, o, b) {
+  if (o == "+")  
+   return a + b
+  else if (o == "-") 
+   return a - b
+  else if (o == "/" && b!=0) 
+   return a / b
+  else if (o == "*") 
+   return a * b
+  else
+   return null}
+   
+   
+7 kyu lucky number
+function isLucky(n) {
+if(n%9==0 || n==0)
+    return true 
+  else 
+    return false}
 
 
 7 kyu Is this a triangle?
