@@ -249,7 +249,30 @@ if(bullets>=(dragons*2))
   else 
    return false}
    
-   
+
+8 kyu Welcome!
+function greet(language) {
+  return language=="czech" ? 'Vitejte' : language=="danish" ? 'Velkomst' : language=="dutch" ? 'Welkom' : language=="estonian" ? 'Tere tulemast' : language=="finnish" ? 'Tervetuloa' : language=="flemish" ? 'Welgekomen' : language=="french" ? 'Bienvenue' : language=="german" ? 'Willkommen' : language=="irish" ? 'Failte' : language=="italian" ? 'Benvenuto' : language=="latvian" ? 'Gaidits' : language=="lithuanian" ? 'Laukiamas' : language=="polish" ? 'Witamy' : language=="spanish" ? 'Bienvenido' : language=="swedish" ? 'Valkommen' : language=="welsh" ? 'Croeso' : 'Welcome'}
+  
+
+8 kyu Transportation on vacation
+function rentalCarCost(d) {
+  if(d==1 || d==2)
+    return d*40
+  else if (d==3 || d==4 || d==5 || d==6)
+    return d*40-20 
+   else 
+     return d*40-50 }
+     
+
+8 kyu This is odd
+function isOdd(n) {
+if(n%1){
+  return false  
+ }return (n%2!==0)}
+
+
+
 7 kyu Debug Basic Calculator
 var calculate = function calculate(a, o, b) {
   if (o == "+")  
