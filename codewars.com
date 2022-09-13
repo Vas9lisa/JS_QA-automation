@@ -462,20 +462,6 @@ function switchItUp(number){
 function checkForFactor (base, factor) {
 return base % factor==0 }
 
-
-7 kyu Debug Basic Calculator
-var calculate = function calculate(a, o, b) {
-  if (o == "+")  
-   return a + b
-  else if (o == "-") 
-   return a - b
-  else if (o == "/" && b!=0) 
-   return a / b
-  else if (o == "*") 
-   return a * b
-  else
-   return null}
-   
  
 8 kyu Grasshopper - Messi Goals
 var laLigaGoals = 43
@@ -495,6 +481,35 @@ function square(number){
   return number**2 }
 
 
+8 kyu Grasshopper - Debug sayHello
+function sayHello(name) {
+  return 'Hello, '+ name }
+
+
+8 kyu How many lightsabers do you own?
+function howManyLightsabersDoYouOwn(name) {
+  return name=="Zach" ? 18 : 0 }
+
+
+8 kyu Multiplication table for number
+function multiTable(number) {
+return `1 * ${number} = ${number*1}\n2 * ${number} = ${number*2}\n3 * ${number} = ${number*3}\n4 * ${number} = ${number*4}\n5 * ${number} = ${number*5}\n6 * ${number} = ${number*6}\n7 * ${number} = ${number*7}\n8 * ${number} = ${number*8}\n9 * ${number} = ${number*9}\n10 * ${number} = ${number*10}` }
+
+
+7 kyu Debug Basic Calculator
+var calculate = function calculate(a, o, b) {
+  if (o == "+")  
+   return a + b
+  else if (o == "-") 
+   return a - b
+  else if (o == "/" && b!=0) 
+   return a / b
+  else if (o == "*") 
+   return a * b
+  else
+   return null}
+   
+   
 7 kyu lucky number
 function isLucky(n) {
 if(n%9==0 || n==0)
