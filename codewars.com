@@ -231,7 +231,28 @@ function doubleInteger(i) {
 function numberToString(num) {
   return `${num}`}
   
- 
+
+8 kyu Quarter of the year
+const quarterOf = (month) => {
+switch(month){
+  case 1:
+  case 2:
+  case 3:
+    return 1
+  case 4:
+  case 5:
+  case 6:
+    return 2
+  case 7:
+  case 8:
+  case 9:
+    return 3
+  case 10:
+  case 11:
+  case 12:
+    return 4      } }
+
+
 8 kyu Opposite number
 function opposite(number) {
   return -number}
@@ -388,6 +409,59 @@ class Kata {
 return length*width*height   } }
 
 
+8 kyu Third Angle of a Triangle
+function otherAngle(a, b) {
+  return 180 - a - b; }
+
+
+8 kyu Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+return current=="green" ? "yellow" :  current=="yellow" ? "red" :  "green" }
+
+
+8 kyu Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+return Math.floor(s*27.777778) }
+
+
+8 kyu Will there be enough space?
+function enough(cap, on, wait) {
+if (wait<=cap-on)
+  return 0
+  return on+wait-cap }
+
+
+8 kyu Switch it Up!
+function switchItUp(number){
+  switch(number) {
+    case 0:
+      return 'Zero';
+    case 1:
+      return 'One';
+    case 2:
+      return 'Two';
+    case 3:
+      return 'Three';
+    case 4:
+      return  'Four';
+    case 5:
+      return 'Five';
+    case 6:
+      return 'Six';
+    case 7:
+      return 'Seven';
+    case 8:
+      return 'Eight';
+    case 9:
+      return 'Nine';
+    default:
+      return 'Unknown number';    } }
+
+
+8 kyu Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+return base % factor==0 }
+
 
 7 kyu Debug Basic Calculator
 var calculate = function calculate(a, o, b) {
@@ -402,7 +476,25 @@ var calculate = function calculate(a, o, b) {
   else
    return null}
    
-   
+ 
+8 kyu Grasshopper - Messi Goals
+var laLigaGoals = 43
+var championsLeagueGoals = 10
+var copaDelReyGoals = 5
+var totalGoals = laLigaGoals+championsLeagueGoals+copaDelReyGoals
+
+
+8 kyu Basic variable assignment
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+
+8 kyu Function 2 - squaring an argument
+function square(number){
+  return number**2 }
+
+
 7 kyu lucky number
 function isLucky(n) {
 if(n%9==0 || n==0)
