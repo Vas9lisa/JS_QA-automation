@@ -374,7 +374,12 @@ function isOdd(n) {
 if(n%1){
   return false  
  }return (n%2!==0)}
-
+ 
+ 8 kyu Jenny's secret message
+function greet(name){
+  if(name == "Johnny")
+    return "Hello, my love!";
+   return "Hello, " + name + "!"; }
 
 
 7 kyu Debug Basic Calculator
