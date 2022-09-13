@@ -382,6 +382,13 @@ function greet(name){
    return "Hello, " + name + "!"; }
 
 
+8 kyu Volume of a Cuboid
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+return length*width*height   } }
+
+
+
 7 kyu Debug Basic Calculator
 var calculate = function calculate(a, o, b) {
   if (o == "+")  
