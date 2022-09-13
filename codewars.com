@@ -60,6 +60,110 @@ if(year%4==0 && year%100!=0 || year%400==0 && year%100==0)
  else return `${year} has 365 days`}
  
  
+ 8 kyu Calculate BMI
+function bmi(weight, height) {
+  return  weight/(height**2)<= 18.5 ? "Underweight" : weight/(height**2)<=25.0 ? "Normal" :  weight/ (height**2)<= 30.0 ? "Overweight" : "Obese" }
+  
+ 
+ 8 kyu
+Opposites Attract
+function lovefunc(flower1, flower2){
+  return flower1%2==0 && flower2%2!=0 || flower1%2!=0 && flower2%2==0 ? true : false}
+  
+ 
+8 kyu Beginner Series #2 Clock 
+function past(h, m, s){
+if(0 <= h <= 23 && 0 <= m <= 59 && 0 <= s <= 59)
+  return h*3600000 + m*60000 + s*1000}
+ 
+ 
+8 kyu Even or Odd
+function even_or_odd(number) {
+return number%2 ? "Odd" : "Even"}
+ 
+
+8 kyu Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+  switch(bool){
+      case true: return "Yes"
+      case false: return "No" }}
+      
+
+8 kyu Convert a Boolean to a String
+function booleanToString(b){
+return (""+b) }
+
+
+8 kyu Get Planet Name By ID
+function getPlanetName(id){
+  var name;
+  switch(id){
+    case 1:
+      name = 'Mercury'
+      break
+    case 2:
+      name = 'Venus'
+      break
+    case 3:
+      name = 'Earth'
+      break
+    case 4:
+      name = 'Mars'
+      break
+    case 5:
+      name = 'Jupiter'
+      break
+    case 6:
+      name = 'Saturn'
+      break
+    case 7:
+      name = 'Uranus'
+      break
+    case 8:
+      name = 'Neptune'}
+  return name;}
+  
+ ИЛИ
+ 
+ function getPlanetName(id){
+  switch(id){
+    case 1:
+      return 'Mercury' 
+    case 2:
+      return 'Venus'
+    case 3:
+      return 'Earth'
+    case 4:
+      return 'Mars'
+    case 5:
+      return 'Jupiter'
+    case 6:
+      return 'Saturn'
+    case 7:
+      return 'Uranus'
+    case 8:
+      return 'Neptune' }}
+
+
+8 kyu Simple multiplication1
+function simpleMultiplication(number) {
+return number*(number%2 ? 9 : 8)}
+
+
+8 kyu Basic Mathematical Operations
+function basicOp(operation, value1, value2){
+  switch(operation){
+   case "+": return value1+value2
+   case "-": return value1-value2
+   case "*": return value1*value2
+   case "/": return value1/value2   }}
+
+
+8 kyu Grasshopper - Messi goals function
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+ return (laLigaGoals + copaDelReyGoals + championsLeagueGoals) }
+ 
+
 8 kyu Student's Final Grade
 function finalGrade (exam, projects) {
 if(exam>90 || projects>10)
@@ -305,8 +409,7 @@ function isTriangle(a,b,c){
     return false }
 
 
-7 kyu
-Calculate Two People's Individual Ages
+7 kyu Calculate Two People's Individual Ages
 function getAges(sum,difference){
   if(sum<0||difference<0)
     return null
