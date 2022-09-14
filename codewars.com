@@ -3,6 +3,11 @@ function multiply(a, b){
  return a * b}
 
 
+8 kyu Keep Hydrated!
+function litres(time) {
+  return Math.floor(time * 0.5);}
+
+
 8 kyu Return Negative
 function makeNegative(num) {
   if(num>0)
