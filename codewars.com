@@ -496,6 +496,11 @@ function multiTable(number) {
 return `1 * ${number} = ${number*1}\n2 * ${number} = ${number*2}\n3 * ${number} = ${number*3}\n4 * ${number} = ${number*4}\n5 * ${number} = ${number*5}\n6 * ${number} = ${number*6}\n7 * ${number} = ${number*7}\n8 * ${number} = ${number*8}\n9 * ${number} = ${number*9}\n10 * ${number} = ${number*10}` }
 
 
+8 kyu String repeat
+function repeatStr (n, s) {
+  return s.repeat(n) }
+
+
 7 kyu Debug Basic Calculator
 var calculate = function calculate(a, o, b) {
   if (o == "+")  
