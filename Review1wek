@@ -1,3 +1,5 @@
+https://replit.com/
+
 document.write('Задание 1', "<br>");
 let a = 2;
 let b = 3;
