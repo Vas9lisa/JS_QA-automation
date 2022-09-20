@@ -21,6 +21,13 @@ console.log(i)
 let box = ['a', 'n', 'c', 'f', 's']
 index:      0    1    2    3    4
 or:      ...         -3   -2   -1
+console.log(переменная[])
+console.log(переменная[переменная.length - 1])
+console.log(переменная.at(-2))
+(Вывод: a , s , f)
+Если обратится к индексу элемента, которого нет, то выведится undefined
+
+
 
 
 
