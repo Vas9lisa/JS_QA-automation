@@ -1,0 +1,16 @@
+Цикл while 
+
+while (условие, если оно true, то переходим к телу кода){
+тело кода
+}
+
+let arr = [1, 'apple', null, 4, true, 87]
+let index = 0
+while(index < arr.length  ИЛИ index <= arr.length-1){
+   console.log(arr[index])
+   index++
+}
+\\ в этом случае выведет в столбец се элементы массиву arr
+
+
+Цикл do while
