@@ -14,7 +14,6 @@ while(index < arr.length  ИЛИ index <= arr.length-1){
 
 
 
-
 👉 Цикл do while
 
 do {
@@ -30,7 +29,6 @@ do {
  } while(i>6)
 
 \\Выведет только один раз 0. Если бы использовали только while, то ни чего бы не вывелось
-
 
 
 
@@ -51,7 +49,6 @@ for(leti = 0; i< arr.length; i++) {
 }
 
 
-
 👉Цикл for (работа с ним)
 Вывести сумму четных чисел массива:
 let ar1 = [1, 30, 6, 3, 7]
@@ -62,16 +59,19 @@ for (let i = 0; i<ar1.length; i++){
   sum+=ar1[i]
   }
 }
-  console.log(sum)
+  console.log(sum) \\36
+  
   
 Вывести все отрицательные числа массива:
 let ar1 = [1, -30, 6, -3, 7]
 
 for (let i = 0; i<ar1.length; i++){
   if (ar1[i]<0){
-    console.log(ar1[i])
+    console.log(ar1[i]) 
  }
 }
+\\ -30 -3
+
 
 Вывести самое большее число массива:
 let ar1 = [1, -30, 6, -3, 7]
@@ -81,4 +81,38 @@ for (let i = 0; i<ar1.length; i++){
     max = ar1[i]
  }
 }
-console.log(max)
+console.log(max) \\7
+
+
+Вывести кол-во букв l в массиве
+let slovo = "Hlellou"
+let sum = 0
+
+for(let i = 0; i<slovo.length; i++){
+   if(slovo[i]=='l'){
+    sum++
+   }
+}
+console.log(sum) \\3
+
+
+
+👉Цикл for of
+кол-во букв l в массиве как выше:
+let slovo = "Hlellou"
+let sum = 0
+for(let sliv of slovo){
+  if(sliv == "l"){
+    sum++
+  }
+}
+console.log(sum)
+
+
+Вывести, есть ли в массиве какое-то слово
+let fruits = ["apple", 'punaple', 'orange']
+for(let fruit of fruits){
+  if(fruit == "orange"){
+    console.log("Есть тут апельсин")
+    }
+}
