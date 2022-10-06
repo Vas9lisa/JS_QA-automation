@@ -1,3 +1,11 @@
+8 kyu Square(n) Sum
+function squareSum(numbers){
+let sum = 0
+for(let i = 0; i<numbers.length;i++){
+  sum = sum+numbers[i]**2 }
+  return sum}
+
+
 8 kyu Multiply
 function multiply(a, b){
  return a * b}
