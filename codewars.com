@@ -6,6 +6,54 @@ for(let i = 0; i<numbers.length;i++){
   return sum}
 
 
+8 kyu Coding 3min : Jumping Dutch act
+function sc(floor){
+  let otvet = ""
+  let skrimEnd = "Pa!"
+  let scrim = "Aa~ "
+  let miniScrim = " Aa!"
+  if(floor<=1){
+    return otvet
+  } else if (floor<=6){
+    for(let i = 2; i <= floor; i++){
+      otvet = otvet + scrim }
+     return otvet+skrimEnd+miniScrim 
+     } else {
+        for(let i = 2; i <= floor; i++){
+      otvet = otvet + scrim}
+        return otvet+skrimEnd       } }
+
+
+8 kyu If you can't sleep, just count sheep!!
+var countSheep = function (num){
+let v = ''
+for(let i = 1; i <= num; i++){
+v = v + i+' sheep...'
+}
+  return v }
+
+
+8 kyu Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = args[0]
+    for(let i = 0; i < args.length; i++){
+      if(min > args[i]){
+        min = args[i]
+      }
+    }return min   } }
+
+
+8 kyu String repeat
+function repeatStr (n, s) {
+  let itog = ""
+for(let i = 1; i<=n;i++){
+  itog = itog+s
+  }
+    return itog }
+
+
+
 8 kyu Multiply
 function multiply(a, b){
  return a * b}
