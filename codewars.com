@@ -1,3 +1,126 @@
+7 kyu number with 3 roots.
+function perfectRoots(n){
+let obr = [0.5, 0.25, 0.125]
+let x = 0
+for(let i = 0; i < obr.length; i++){  
+  if(n**obr[i]%1==0)
+  x++
+   }
+   if(x==3){ 
+  return true
+   } else {
+    return false    } }
+
+
+
+7 kyu Debug Basic Calculator
+var calculate = function calculate(a, o, b) {
+  if (o == "+")  
+   return a + b
+  else if (o == "-") 
+   return a - b
+  else if (o == "/" && b!=0) 
+   return a / b
+  else if (o == "*") 
+   return a * b
+  else
+   return null}
+   
+   
+7 kyu lucky number
+function isLucky(n) {
+if(n%9==0 || n==0)
+    return true 
+  else 
+    return false}
+
+
+7 kyu Is this a triangle?
+function isTriangle(a,b,c){
+  if(a<=0 || b<=0 || c<=0)
+    return false
+  else if(a+b>c && a+c>b && c+b>a)
+    return true
+  else 
+    return false }
+
+
+7 kyu Sum even numbers
+function sumEvenNumbers(input) {
+  let sum = 0
+  for(let i = 0; i < input.length; i++){
+    if(input[i]%2==0){
+      sum+=input[i]
+    } else if(input.length<=0) {
+      return 0      
+    }
+  } return sum }
+
+
+
+7 kyu Simple Fun #152: Invite More Women?
+function inviteMoreWomen(L) {
+let sum = 0
+for(let i = 0; i < L.length; i++){
+  sum += L[i]
+}
+ if(sum >= 1){
+   return true
+ } else {
+   return false  }     }
+
+
+7 kyu Calculate Two People's Individual Ages
+function getAges(sum,difference){
+  if(sum<0||difference<0)
+    return null
+  else if((sum+difference)/2<0 || (sum-difference)/2<0)
+    return null
+  else 
+    return [(sum+difference)/2 , (sum-difference)/2]}
+
+
+
+
+8 kyu Calculate average
+function findAverage(array) {
+let sum = 0
+let element = 0
+for(let i = 0; i < array.length; i++){
+  sum+=array[i]
+  element++
+}
+  if(array.length > 0) {
+  return sum/element
+    } else {
+      return 0    } }
+
+
+8 kyu Sum of positive
+function positiveSum(arr) {
+  let sum = 0
+  for(let i = 0; i<arr.length; i++){
+    if(arr[i] >= 0) {
+      sum += arr[i]
+    }
+  }
+  return sum }
+
+
+8 kyu How good are you really?
+function betterThanAverage(classPoints, yourPoints) {
+  let sumClass = 0
+  let sumPeople = 0
+  for(let i = 0; i < classPoints.length; i++) {
+    sumClass += classPoints[i]
+    sumPeople++
+    }
+  if(sumClass/sumPeople < yourPoints) {
+    return true 
+    } else {
+      return false       } }
+
+
 8 kyu Square(n) Sum
 function squareSum(numbers){
 let sum = 0
@@ -564,6 +687,18 @@ function multiTable(number) {
 return `1 * ${number} = ${number*1}\n2 * ${number} = ${number*2}\n3 * ${number} = ${number*3}\n4 * ${number} = ${number*4}\n5 * ${number} = ${number*5}\n6 * ${number} = ${number*6}\n7 * ${number} = ${number*7}\n8 * ${number} = ${number*8}\n9 * ${number} = ${number*9}\n10 * ${number} = ${number*10}` }
 
 
+8 kyu Sum Arrays
+function sum (numbers) {
+ let sum = 0
+ for(let i = 0; i < numbers.length; i++){
+   sum+=numbers[i]
+ }
+  if(numbers.length > 0){
+    return sum
+  } else {
+    return 0   }  }
+
+
 8 kyu Draw stairs
 function drawStairs(n) {
 let v = "I"
@@ -581,58 +716,13 @@ function repeatStr (n, s) {
   return s.repeat(n) }
 
 
-7 kyu number with 3 roots.
-function perfectRoots(n){
-let obr = [0.5, 0.25, 0.125]
-let x = 0
-for(let i = 0; i < obr.length; i++){  
-  if(n**obr[i]%1==0)
-  x++
-   }
-   if(x==3){ 
-  return true
-   } else {
-    return false    } }
-
-
-
-7 kyu Debug Basic Calculator
-var calculate = function calculate(a, o, b) {
-  if (o == "+")  
-   return a + b
-  else if (o == "-") 
-   return a - b
-  else if (o == "/" && b!=0) 
-   return a / b
-  else if (o == "*") 
-   return a * b
-  else
-   return null}
-   
-   
-7 kyu lucky number
-function isLucky(n) {
-if(n%9==0 || n==0)
-    return true 
-  else 
-    return false}
-
-
-7 kyu Is this a triangle?
-function isTriangle(a,b,c){
-  if(a<=0 || b<=0 || c<=0)
-    return false
-  else if(a+b>c && a+c>b && c+b>a)
-    return true
-  else 
-    return false }
-
-
-7 kyu Calculate Two People's Individual Ages
-function getAges(sum,difference){
-  if(sum<0||difference<0)
-    return null
-  else if((sum+difference)/2<0 || (sum-difference)/2<0)
-    return null
-  else 
-    return [(sum+difference)/2 , (sum-difference)/2]}
+8 kyu Draw stairs
+function drawStairs(n) {
+let v = "I"
+let space = " "
+let space1 = " "
+for(let i = 1; i<n; i++) {
+  v +="\n" + space + "I" 
+  space = space+space1
+}
+return v   } 
