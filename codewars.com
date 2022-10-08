@@ -552,14 +552,48 @@ function howManyLightsabersDoYouOwn(name) {
   return name=="Zach" ? 18 : 0 }
 
 
+8 kyu A Needle in the Haystack
+function findNeedle(haystack) {
+for(let i = 0; i < haystack.length; i++){
+    if(haystack[i] == "needle"){
+      return "found the needle at position " + i   }   }  }
+
+
 8 kyu Multiplication table for number
 function multiTable(number) {
 return `1 * ${number} = ${number*1}\n2 * ${number} = ${number*2}\n3 * ${number} = ${number*3}\n4 * ${number} = ${number*4}\n5 * ${number} = ${number*5}\n6 * ${number} = ${number*6}\n7 * ${number} = ${number*7}\n8 * ${number} = ${number*8}\n9 * ${number} = ${number*9}\n10 * ${number} = ${number*10}` }
 
 
+8 kyu Draw stairs
+function drawStairs(n) {
+let v = "I"
+let space = " "
+let space1 = " "
+for(let i = 1; i<n; i++) {
+  v +="\n" + space + "I" 
+  space = space+space1
+}
+return v   }
+
+
 8 kyu String repeat
 function repeatStr (n, s) {
   return s.repeat(n) }
+
+
+7 kyu number with 3 roots.
+function perfectRoots(n){
+let obr = [0.5, 0.25, 0.125]
+let x = 0
+for(let i = 0; i < obr.length; i++){  
+  if(n**obr[i]%1==0)
+  x++
+   }
+   if(x==3){ 
+  return true
+   } else {
+    return false    } }
+
 
 
 7 kyu Debug Basic Calculator
