@@ -726,3 +726,35 @@ for(let i = 1; i<n; i++) {
   space = space+space1
 }
 return v   } 
+
+
+
+
+
+
+Задачи с интервью
+
+A car rides through a road section, where some parts of the road could be damaged.
+The road section is given as an array "roadWithDamages" of ten boolean elements.
+If the element inside the array has value - true, it means the road section is damaged.
+The car's ride has to be implemented as a loop, where each iteration - one step forward (the next element of the array)
+After each step the function has to write in console "The car goes to step ${i + 1}".
+If the car detects a damage (boolean value - true):
+ - for the first time, it has to write in console "The car is damaged", but it can continue to go to the next step
+ - for the second time, it has to write in console "The car is broken" and it can not continue to drive anymore
+ 
+ 
+ let moveCar = [false, false, false, false, true, false, false, false, false]
+  let trues = 0
+  for(let i = 0; i < moveCar.length; i++){
+    if(moveCar[i] == false){
+      console.log("The car goes to step "+ (i+1))
+    } else if(moveCar[i] == true && trues == 1 ){
+      console.log("The car is broken") 
+      break
+    } else {
+      console.log("The car is damaged") 
+      trues++      }     }
+      
+      
+      
