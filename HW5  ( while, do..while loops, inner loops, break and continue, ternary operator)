@@ -1,0 +1,30 @@
+Loop while
+while (condition){
+  code block
+}
+
+let fruits = ['apple', 'pears', 'plums', 'grape']
+let x = 0
+while(x < fruits.length) {
+console.log(fruits[x])
+x++  }
+
+Loop while
+do while
+do {
+ code block
+} while (condition)
+
+let k
+do {
+console.log(k)
+k++
+} while (k > 3)
+
+
+
+HW:
+1) Нарисуйте ромб
+2) Нарисуйте елочку
+3) Нарисуйте пирамидку
+4) Закрепление- Продумайте код для создания сэндвичей с 3-мя начинками и выставите цену в зависимости от вида начинки. Используйте while and do.. while loops
