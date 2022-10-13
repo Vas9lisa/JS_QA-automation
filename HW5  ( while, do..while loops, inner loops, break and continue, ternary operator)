@@ -1,4 +1,4 @@
-Loop while
+👉Loop while
 while (condition){
   code block
 }
@@ -9,8 +9,7 @@ while(x < fruits.length) {
 console.log(fruits[x])
 x++  }
 
-Loop while
-do while
+👉Loop do while
 do {
  code block
 } while (condition)
@@ -22,6 +21,60 @@ k++
 } while (k > 3)
 
 
+👉break and continue
+break - обрывает код
+continue - переходи кследующей части кода
+
+
+
+👉Вложенные циклы
+
+for(let line = 1; line <=5; i++){                           //Отвечате за колличество строк
+ let str = ""
+  for(let numInLine = 1; numInLine <= line; numInLine++){   //Отвечает за наполнение строк
+  ster = str + numInLine
+ }
+    console.log(str);
+}
+//Выведет лесенку
+1
+12 
+123
+1234
+12345
+
+
+for(let i = 3; i >= 0; i--){
+    let str = "" 
+       for(let j = 0; j <= i; j++){
+        str = str + j
+    }
+     console.log(str)
+}
+
+\\Выведет лесенку вверх ногами
+0123
+012
+01
+0
+
+
+👉Как достать элемент из вложенного массива
+
+let arr = ['q', 1343, ['14' , 'hello', [false, true, 14, 'Bingo!']], 'live']
+console.log(arr[2][2][3]) // выведет Bingo!
+
+
+
+👉 Как проверить пустой ли массив
+let arr2 = []
+ if(arr2.length == 0){
+    console.log("Пусто о/")
+ }
+ 
+ 
+ 
+ 
 
 HW:
 1) Нарисуйте ромб
