@@ -1,0 +1,23 @@
+Проверка - массив или нет:
+1) arr == null ? "нет массива" : arr.lenght
+2) !arr ? "нет массива" : arr.lenght
+3) Array.isArray(arr)
+
+
+0, null, undefined, NaN, "" ---> FALSE
+Все остальное ---> TRUE
+
+Сартировка массива
+
+let love = [7, 35, 236, 3, 11, 76]
+for(let i = 0; i < love.length - 1; i++){
+   for(let j = i + 1; j < love.length; j++){
+      if(love[i] > love[j]){
+         let vi = love[i]
+         love[i] = love[j]
+         love[j] = vi
+      }
+   } 
+}
+console.log(love)
+\\ Выводит   [ 3, 7, 11, 35, 76, 236 ]
