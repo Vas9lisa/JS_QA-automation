@@ -68,3 +68,24 @@ console.log(str)
 1  
 
 
+
+Пирамидка:
+let n = 5
+let str = ""
+for (let i = 1 ; i <= n; i++){
+   str += " ".repeat(n - i)
+   for (let j = 1; j <= i; j++){
+      str += j
+   } 
+   for (let k = i - 1; k >= 1; k--){
+      str += k
+   }
+   str += "\n"
+}
+console.log(str)
+\\Выводит 
+    1
+   121
+  12321
+ 1234321
+123454321
