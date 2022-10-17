@@ -142,3 +142,36 @@ for(let i = 0; i < one.length + two.length ; i++){
   }
 }
 console.log (sum)
+
+
+
+
+function myFirstApp(name, age) {
+    alert(`Привет, меня зовут ${name} и это моя первая программа`)
+
+    function showSkills(){
+        let skills = ["умненькая", "красивенькая", "хохотушка"];
+             for (let i = 0; i < skills.length; i++) {
+              console.log(`Я хорошенькая, потому что: ` + skills + "!");
+}
+    }
+
+    function checkAge(age){
+        if(age<18){  
+            console.log("А ты активный малый!");
+        } else {
+            console.log(`Время покорять Мир, ${name}!`);
+        }
+    }
+  
+    function calcPow(num){
+     console.log(`Полезное знание! Если ${num} умножить само на себя, то в ответе получится ` + num * num)
+    }
+
+    showSkills();
+    checkAge(age);
+    (calcPow(6))
+
+}
+
+myFirstApp("Mary", 22);
