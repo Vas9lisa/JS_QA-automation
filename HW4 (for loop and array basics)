@@ -37,7 +37,7 @@ Console.log(NewS)
 let x = "ВасяЛиса"
 let str2 = ""
 for(let i = x.length-1; i>=0; i--){
-str2 = str2=x[i]
+str2 = str2 + x[i]
 }
 console.log(str2)  //Выведет асиЛясаВ
 
