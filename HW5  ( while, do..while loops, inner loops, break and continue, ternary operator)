@@ -78,6 +78,91 @@ let arr2 = []
 
 HW:
 1) Нарисуйте ромб
+          1
+        121
+       12321
+      1234321
+     123454321
+    12345654321
+   1234567654321
+  123456787654321
+ 12345678987654321
+1234567890987654321
+ 12345678987654321
+  123456787654321
+   1234567654321
+    12345654321
+     123454321
+      1234321
+       12321
+        121
+         1
+         
+let fig = ""
+space = " "
+x = 10
+for(let i = 1; i <= x; i++){
+  fig += space.repeat(x - i)
+for(let j = 1; j <= i; j++) {
+  if(j == 10){
+    fig +=0
+  }
+  else fig += j
+  }
+for (let j = i - 1; j >= 1; j--) {
+  fig += j
+ }
+  fig += "\n"
+}
+ x = 9
+ for(let i = 1; i <= x; i++) {
+   fig += space.repeat(i)
+ for(let j = 1; j <= x + 1 - i; j++) {
+   fig += j
+  }
+  for(let j = x - i; j >= 1; j--) {
+   fig += j
+   }
+   fig += "\n"
+   }
+   console.log(fig)
+
+
 2) Нарисуйте елочку
+    *
+   ***
+  *****
+ *******
+*********
+
+let yelka = ""
+let x = 5
+let space = " "
+let sum = 1
+for (let i = 1; i <= x; i++) {
+  yelka += space.repeat(x - i) + "*".repeat(sum) + "\n"
+  sum += 2
+}
+console.log(yelka)
+
+
+
 3) Нарисуйте пирамидку
-4) Закрепление- Продумайте код для создания сэндвичей с 3-мя начинками и выставите цену в зависимости от вида начинки. Используйте while and do.. while loops
+1 
+2 6
+3 7 10
+4 8 11 13
+5 9 12 14 15
+
+let pir = ""
+let x = 5
+let space = " "
+for (let i = 1; i <= x; i++) {
+  let cew = i
+   for(let j = 1; j <= i; j++) {
+    pir += cew + space
+    cew = cew + (x - j)
+   }
+   pir += "\n"
+}
+console.log(pir)
