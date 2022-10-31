@@ -38,5 +38,26 @@ function print (ar){
 function sum (a, b) {
 return a+b
 }
-sum("sfd", "sdf")
+console.log(sum("sfd", "sdf"))
 \\ конкатинацией склеются строки. Выведется "sfdsdf"
+
+
+
+
+Function Expression
+В ней ставится ; на конце(!)
+Нельзя использовать такую функцию, до того, как её объявили.
+
+let helk = function(name) {
+console.log("hi, " + name);
+};
+helk("Vas9")
+
+Используется редко. Можно легко запутаться.
+
+
+
+Стрелочная функция
+let sam = (a,b) => a+b;
+console.log(sam(3,9))
+
