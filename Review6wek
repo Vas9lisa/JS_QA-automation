@@ -1,1 +1,23 @@
-Фанкшен дикларейшен
+Варианты объявления функции:
+1. Фанкшен дикларейшен
+function Vas(){
+  console.log("Hello!")
+}
+
+2. Фанкшен экспрешен (Функциональное выражение)
+const vas = function(){
+  console.log("Hello")
+  }
+  
+  
+ function check(num){
+    return(num % 2 ? "even" : "odd");
+   }
+ let arr = [2, 4 , 5, 7, 10]
+  
+ for(let i = 0; i < arr.length; i++){
+    console.log(`${arr[i]} - ${check(arr[i])}`)
+    }
+//вывод 2 - even, 4 - even, 5 - odd, 7 - odd, 10 - even
+
+
