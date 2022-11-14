@@ -21,3 +21,14 @@ const vas = function(){
 //вывод 2 - even, 4 - even, 5 - odd, 7 - odd, 10 - even
 
 
+
+Особенность switch
+function sus(num1, num2, oper){
+ switch(oper){
+   case "+":
+     retuen num1 + num2
+   case "-":
+     return num1 - num2
+   }
+}
+Не нужен break ибо есть return. Можно вставить break, но код будет длиннее и хуже читаться.
