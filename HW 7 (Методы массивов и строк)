@@ -1,1 +1,54 @@
+Стринг - нельзя поменять отдельный эелемент
+В эрей можно поменять один из элементов
 
+МЕТОДЫ 
+
+Конвертация стринг в Арей и наоборот
+split() и join()
+
+let car = "Hello World"
+console.log(car.split(" "))
+Вывод ["Hello", "World"]  // просто выводит массив array
+let carNew = car.split(" ")  // Вот так уже можно что-то менять в этом массиве
+
+let array = ["a", "b", "c", 1, 2, 3]
+console.log(array.join())
+Вывод a, b, c, 1, 2, 3  //string
+
+let newArr = array.join("")
+console.log(newArr)
+Вывод abc123
+
+
+Удаление\Добавление элементов в конце
+push и pop
+
+let arr = ["a", "b", "c", 1, 2, 3]
+arr.push("a")   // ВСЕГДА В КОНЕЦ МАССИВА!
+console.log(arr)
+Вывод ["a", "b", "c", 1, 2, 3, "a"]
+
+arr.pop()
+console.log(arr)
+Вывод ["a", "b", "c", 1, 2, 3]
+
+let c = arr.push("cc") 
+console.log(arr)  //Вывод ["a", "b", "c", 1, 2, 3, "cc"]
+console.log(c)   //Вывод 7  (возвращает кол-во элементов в массиве)
+let a = arr.pop
+console.log(arr)   //Вывод ["a", "b", "c", 1, 2, 3]
+console.log(a)     // Вывод "cc"   (показывает удаленный элемент)
+
+
+Удаление\Добавление элементов в начале
+shift и unshift
+
+let bets = ["a", "b", "c"]
+bets.unshift("Z")
+let b = bets.unshift("YA")
+console.log(bets)     //Вывод ["YA", "Z","a", "b", "c"]
+console.log(b)    //Вывод 5 (возвращает кол-во элементов в массиве)
+
+let f = bets.shift()
+console.log(bets)   //Вывод ["Z","a", "b", "c"]
+console.log(b)      //Вывод "YA"  (показывает удаленный элемент)
