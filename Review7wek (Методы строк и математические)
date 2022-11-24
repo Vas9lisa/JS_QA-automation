@@ -37,3 +37,47 @@ lower - всё уменьшает
 
 
 Обрезка пробелов   .trim     .trimStart    .trimEnd
+
+
+
+Математические методы:
+
+Math.floor
+
+
+Math.ceil
+
+
+Math.round
+
+
+Math.trunc
+
+
+Math.min
+
+
+Math.max
+
+
+Math.pow
+
+
+Math.sqrt
+
+
+.toFixed
+
+
+Math.sign
+
+
+isFinite
+
+
+parseFloat
+
+
+parseInt
+
+
