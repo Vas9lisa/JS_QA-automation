@@ -171,3 +171,8 @@ zx = [1, 2, 3]
 zx.map(x => x**2)  // [1, 4, 9]  возведение в квадрат
 
 
+.endsWith  ищет схожесть в конце строки/ true\false
+rar = 'abcde' 
+tat = 'cde'
+Заканчивается ли rar tat'ом?
+rar.endsWith(rar)   /true
