@@ -42,42 +42,67 @@ lower - всё уменьшает
 
 Математические методы:
 
-Math.floor
+Math.floor  Округление до целого в меньшую сторону
+sum = 6.64
+Math.floor(sum)  // 6
 
 
-Math.ceil
+Math.ceil    Округление до целого в большую сторону
+sum = 6.64
+Math.ceil(sum)  // 7
 
 
-Math.round
+Math.round   Округление до целого, в зависимости от дробной части. по законам математике.
+sum = 6.64     или    6.34
+Math.round(sum)  // 7 или 6
 
 
-Math.trunc
+Math.trunc  Просто обрезание дробной части
+sum = 6.64
+Math.trunc(sum)  // 6
 
 
-Math.min
+Math.min  Ищет минимальное значение. ВАЖНО ...  развертывать масисив
+arr = [23, 17, 98, 5, 3]
+min = Math.min(...arr)  //Выведет 3
 
 
-Math.max
+Math.max   Ищет максимальное значение. ВАЖНО ...  развертывать масисив
+arr = [23, 17, 98, 5, 3]
+max = Math.max(...arr)  //Выведет 98
 
 
-Math.pow
+Math.pow Ищет степень числа 
+Math.pow(2,4)   // выведет два в четвертой степени 16
 
 
-Math.sqrt
+Math.sqrt   Квадратный корень
+Math.sqrt(25)  // 5
 
 
-.toFixed
+.toFixed  Округление и Обрезка до нужного колличества после запятой. ВОЗВРАЩАЕТ СТРОКУ!!!
+sum = 6.64875
+sum.toFixed(3)   // 6.649
 
 
-Math.sign
+Math.sign Отображение знака цифр (отриц или положит) -1 и 0 и 1
+sum = 6.64875
+Math.sign(sum)   // Вывод 1 ибо положительное
 
 
-isFinite
+isFinite  узнать конечное ли значение в данных. 
+true - если значение конечные(обычные) числа
+false - infiniti \ NaN
+is.Finite(sum)   //true
+
+parseFloat  Вытаскивает целое число с дробной частью. Но если цифры НЕ В НАЧАЛЕ, то вернёт NaN
+dd = "1000.23px"
+parseFloat(dd)   /// 1000.23
+тт = "e1000.23px"
+parseFloat(тт)   /// NaN
 
 
-parseFloat
-
-
-parseInt
-
+parseInt Вытаскивает целое число. Но если цифры НЕ В НАЧАЛЕ, то вернёт NaN
+dd = "1000.23px"
+parseInt(dd)   // 1000
 
