@@ -80,6 +80,33 @@ function getAges(sum,difference){
     return [(sum+difference)/2 , (sum-difference)/2]}
 
 
+7 kyu String ends with?
+function solution(str, ending){
+ return str.endsWith(ending) }
+
+
+8 kyu No Loops 2 - You only need one
+function check(a,x){
+  return a.includes(x)  };
+
+
+8 kyu Is this my tail?
+function correctTail(bod, tail){
+  return bod.endsWith(tail) }
+
+ИЛИ
+
+function correctTail(bod, tail){
+  return bod[bod.length - 1] == tail[0]  }
+
+ИЛИ
+
+function correctTail(bod, tail){
+ let sub = bod.substring(bod.length-(tail.length))
+  if (sub == tail){
+    return true
+  } else {
+    return false     }  }
 
 
 8 kyu Calculate average
